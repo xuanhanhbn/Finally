@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Sản Phẩm</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon"
+    href="https://images.pexels.com/photos/2137388/pexels-photo-2137388.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+  <!-- Bootstrap CSS v5.2.0-beta1 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./media.css">
+
+</head>
+
+<body class="js-products">
+  <header>
+    <div class="container-xl">
+        <nav class="navbar navbar-expand-lg header">
+            <div class="container-fluid header-container">
+                <div class="header-logo">
+                  <a href="./index.html">
+                    <img src="./img/logo.png" alt="ảnh logo">
+                </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                </button>
+
+                <div class="collapse navbar-collapse header-title" id="navbarSupportedContent">
+                    <ul class="navbar-nav navbar-nav-title mb-lg-0">
+                        <li class="nav-item home-page" >
+                            <a href="./index.html">TRANG CHỦ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./introduce.html">GIỚI THIỆU</a>
+                        </li>
+                        <li class="nav-item"  style="background-color: rgba(0, 0, 0, 0.4)">
+                            <a href="./products.html">SẢN PHẨM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">KÊNH SỈ/DỰ ÁN/CTV</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./contcact.html">LIÊN HỆ</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav mb-lg-0">
+                        <li class="nav-item login-user2 ">
+                            <span class="header-img-user ">
+                                <i class="fa-solid fa-user"></i>
+                            </span>
+                            <span class="login-user">Đăng nhập</span>
+                            <span class="user-use"></span>
+                            <div class=" account">
+                                <span class="account-text">Tài Khoản của tôi</span>
+                                <span class="account-text login-out">Đăng xuất</span>
+                            </div>
+                        </li>
+                        <li class="nav-item header-cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span>0</span>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+
+            
+        </nav>
+
+    </div>
+</header>
+
+  <!-- modal -->
+  <div class="modal-cart">
+
+    <div class="modal-cantainer">
+        <div class="modal-tite">
+            <span>Giỏ Hàng</span>
+            <div class="icon-delete-modal">
+                <i class="bi bi-x-lg "></i>
+            </div>
+        </div>
+
+        <div class="add-item-cart">
+
+        </div>
+
+
+        <div class="img-cart-no-product" style="display: none;">
+            <div class="content-no-product">
+                <img src="https://salt.tikicdn.com/desktop/img/mascot@2x.png" alt="">
+                <p>Không có sản phẩm nào trong giỏ hàng của bạn <span>😢</span> </p>
+                <button class="btn-shopping"><a href="./products.html">Tiếp Tục Mua Hàng</a> </button>
+            </div>
+        </div>
+
+        <div class="into-moneys">
+            <p>Tổng thanh toán (<span>2</span> Sản Phẩm):</p>
+            <div class="save">
+                <span class="into-money">5.340.000₫</span>
+                <p> <span>Tiết kiệm :</span> <span class="save-moneys">0₫</span></p>
+            </div>
+
+        </div>
+
+        <div class="footer-modal">
+            <button class="checkout-modal">Mua Hàng</button>
+        </div>
+    </div>
+
+    <div class="modal-login">
+        <div class="modal-login-tabs">
+            <div class="btn-login">Đăng nhập</div>
+            <div class="btn-register"> Đăng ký</div>
+        </div>
+
+        <form action="" class="form-1">
+
+            <div class="form-group">
+                <label for="email" class="form-label">Nhập email</label>
+                <input id="email" name="email" type="text" placeholder="VD: hung@gmail.com"
+                    class="form-control">
+                <span class="form-message"></span>
+            </div>
+            <div class="form-group">
+                <label for="password" class="form-label">Mật khẩu</label>
+                <input id="password" name="password" type="password" placeholder="VD: 123456"
+                    class="form-control">
+                <span class="form-message"></span>
+            </div>
+            <div class="form-group">
+                <label for="password2" class="form-label">Nhập lại mật khẩu</label>
+                <input id="password2" name="password2" type="password" placeholder="VD: 123456"
+                    class="form-control">
+                <span class="form-message"></span>
+                <span class="forgot-password">Quên mật khẩu</span>
+            </div>
+            <div class="footer-login d-flex justify-content-between ">
+                <div class="d-flex align-items-center">
+                    <input id="remember-password" type="checkbox">
+                    <label for="remember-password"> Nhớ mật khẩu</label>
+                </div>
+                <button id="login">Đăng ký</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="modal-information-user">
+        <span class="modal-user-title">Địa Chỉ Nhận Hàng</span>
+        <form action="" class="form-2">
+            <div class="d-flex justify-content-between">
+                <div id="name" class="form-group">
+                    <input name="name" type="text" placeholder="Họ và  tên">
+                    <span class="form-message"></span>
+                </div>
+                <div id="phone" class="form-group">
+                    <input name="phone" type="text" placeholder="Số điện thoại">
+                    <span class="form-message"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <select name="city" id="city">
+                    <option value="" disabled="disabled" selected="selected">Tỉnh/Thành phố</option>
+                    <option>Hà nội</option>
+                    <option>Hồ Chí Minh</option>
+                    <option>Quảng Ninh</option>
+                    <option>Thanh Hóa</option>
+                    <option>Hà Nam</option>
+                    <option>Thái Bình</option>
+                </select>
+                <span class="form-message"></span>
+            </div>
+            <div class="form-group">
+                <select name="district" id="district">
+                    <option value="" disabled="disabled" selected="selected">Quận/Huyện</option>
+                </select>
+                <span class="form-message"></span>
+            </div>
+            <div class="form-group">
+                <textarea id="address" name="address" type="text"
+                    placeholder="Địa chỉ cụ thể ..."></textarea>
+                <span class="form-message"></span>
+            </div>
+
+
+
+            <div class="d-flex justify-content-end footer-information">
+                <!-- <button class="btn come-back">TRỞ LẠI</button> -->
+                <button class="btn next">TIẾP TỤC</button>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+  <div class="slider-product">
+    <p>Cây Xanh và Phụ Kiện </p>
+  </div>
+
+  <content>
+    <div class="container-md">
+      <div class="row">
+        <div class="col-lg-4 col-xl-3 d-none d-lg-block">
+          <div class="contai-sidebar">
+            <div class="sidebar">
+
+              <div class="sidebar-title">
+                <i class="fa-solid fa-bars"></i>
+                <h3>DANH MỤC SẢN PHẨM</h3>
+              </div>
+
+              <ul>
+                <li class="sidebar-items">
+                  <a href="#">Cây cảnh nội thất</a>
+                </li>
+                <li class="sidebar-items">
+                  <a href="#">Cây cảnh văn phòng
+                  </a>
+                </li>
+                <li class="sidebar-items">
+                  <a href="#">Cây để bàn</a>
+                </li>
+                <li class="sidebar-items">
+                  <a href="#">Cây xương rồng</a>
+                </li>
+                <li class="sidebar-items">
+                  <a href="#">Chậu trồng cây</a>
+                </li>
+                <li class="sidebar-items">
+                  <a href="#">Hoa đào tết</a>
+                </li>
+                <li class="sidebar-items">
+                  <a href="#">Hoa treo ban công</a>
+                </li>
+
+              </ul>
+             
+              
+
+            </div>
+
+            <div class="filter-price">
+              <span>LỌC THEO GIÁ</span>
+              <div class="slider-filter">
+                <div class="proress"></div>
+              </div>
+             <div class="range-input">
+               <input type="range" class="range-min" min="300" max="4445" value="0">
+               <input type="range" class="range-max" min="300" max="4445" value="4445">
+             </div>
+
+              <div class="filter-price-text">
+                <span>Lọc</span>
+                <div class="filter-price2">
+                  <p>Giá <span class="filter-price2-min"> 4.819.000 </span> ₫ <i class="bi bi-dash"></i> <span class="filter-price2-max"> 4.819.000 </span> ₫</p>
+                </div>
+              </div>
+
+            </div>
+           
+
+            <div class="filter-price">
+              <span>KÍCH THƯỚC</span>
+              <div>
+                <input type="checkbox" name="filter-size " id="checkbox9">
+                <label for="checkbox9"> Dưới 0.5m</label>
+              </div>
+              <div>
+                <input type="checkbox" name="filter-size " id="checkbox10">
+                <label for="checkbox10">Cao 0.5m - 1m</label>
+              </div>
+              <div>
+                <input type="checkbox" name="filter-size " id="checkbox11">
+                <label for="checkbox11">Cao 1m - 1m5</label>
+              </div>
+
+              <div>
+                <input type="checkbox" name="filter-size " id="checkbox12">
+                <label for="checkbox12">Cao 1m5 - 2m</label>
+              </div>
+
+              <div>
+                <input type="checkbox" name="filter-size " id="checkbox1">
+                <label for="checkbox1">Trên 2m</label>
+              </div>
+
+            </div>
+
+            <div class="information-support">
+              <div>
+                <img src="./img/img01.png" alt="">
+                <div>
+                  <p>HỖ TRỢ TRỰC TUYẾN</p>
+                  <span>0969 999 999</span>
+                </div>
+              </div>
+
+              <div>
+                <img src="./img/img02.png" alt="">
+                <div>
+                  <p>GIAO HÀNG TOÀN QUỐC</p>
+                  <span>Liên hệ với Shop để biết phí ship</span>
+                </div>
+              </div>
+
+              <div>
+                <img src="./img/img03.png" alt="">
+                <div>
+                  <p>ĐẢM BẢO HÀNG GỬI 100%</p>
+                  <span>Đảm bảo hàng gửi trong mọi trường hợp hàng thiếu, bể vỡ trong quá trình vận
+                    chuyển</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg-8 col-xl-9 col-12">
+          <div>
+            <!-- <div class="product-tabs">
+              <a href="./index.html">Trang chủ</a>
+              <i class="fa-solid fa-angle-right"></i>
+              <a href="#">Tất cả sản phẩm</a>
+            </div> -->
+
+            <div class="product-filter">
+              <span>TẤT CẢ SẢN PHẨM</span>
+              <div class="product-search">
+                <div>
+                  <input class="slider-input-search" type="text" placeholder="Tìm kiếm ">
+                  <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                </div>
+                <!-- <div style="width: 50%"></div> -->
+              </div>
+              <!-- <div>
+                <div class="product-sort">
+                  <div>
+                    <span>Sắp xếp:</span>
+                    <ul>
+                      <li>
+                        <p>Thứ tự</p>
+                        <ul class="list-menu">
+                          <li>Mặc định</li>
+                          <li>A <i class="fa-solid fa-arrow-right"></i> Z</li>
+                          <li>Z <i class="fa-solid fa-arrow-right"></i> A</li>
+                          <li>Gía tăng dần</li>
+                          <li>Gía giảm dần</li>
+                          <li>Hàng mới nhất</li>
+                        </ul>
+                      </li>
+                    </ul>
+
+                  </div>
+                </div>
+              </div> -->
+            </div>
+            <div class="products" id="products">
+
+              <div class="row gy-4">
+                <!-- <div class="col-12 col-sm-6 col-lg-4 js-products-card">
+                  <a href="./product-detai.html">
+                    <div class="card">
+                      <img src="./img/img7.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Cây dừa giả cao 120 cm</h5>
+                        <span class="price">1.100.000 ₫</span>
+                      </div>
+                      <span class="sale-off">-9%</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 js-products-card">
+                  <div class="card">
+                    <img src="./img/img8.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Cây táo nở hoa Bonsai giả decor</h5>
+                      <span class="price">1.350.000 ₫</span>
+                    </div>
+                    <span class="sale-off">-19%</span>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 js-products-card">
+                  <div class="card">
+                    <img src="./img/img9.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Cây lựu giả cao cấp</h5>
+                      <span class="price">3565.000 ₫</span>
+                    </div>
+                    <span class="sale-off">-13%</span>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 js-products-card">
+                  <div class="card">
+                    <img src="./img/img10.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Cây hoa Anh Đào giả</h5>
+                      <span class="price">1.225.000 ₫</span>
+                      <span class="sale-off">-5%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 js-products-card">
+                  <div class="card">
+                    <img src="./img/img11.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Cây hoa Anh Đào giả</h5>
+                      <span class="price">455.000₫</span>
+                      <span class="sale-off">-7%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 js-products-card">
+                  <div class="card">
+                    <img src="./img/img12.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Cây giáng hương cảnh</h5>
+                      <span class="price">1.765.000 ₫</span>
+                    </div>
+                    <span class="sale-off">-8%</span>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 js-products-card">
+                  <div class="card">
+                    <img src="./img/img13.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Cây chầu bà leo cột giả</h5>
+                      <span class="price">765.000 ₫</span>
+                    </div>
+                    <span class="sale-off">-10%</span>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 js-products-card">
+                  <div class="card">
+                    <img src="./img/img14.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Cây Bonsai giả dáng đẹp hợp phong thủy</h5>
+                      <span class="price">3765.000 ₫</span>
+                    </div>
+                    <span class="sale-off">-8%</span>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 js-products-card">
+                  <div class="card">
+                    <img src="./img/img15.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Cây nguyệt quế Bonsai giả cao 150cm</h5>
+                      <span class="price">3765.000 ₫</span>
+                    </div>
+                    <span class="sale-off">-30%</span>
+                  </div>
+                </div> -->
+              </div>
+              <div class="product-item-tabs ">
+                <button class="btn-product-top2"><i class="bi bi-chevron-double-left"></i></button>
+                <button class="btn-product-top active" id="btn-products1">1</button>
+                <button class="btn-product-top" id="btn-products2">2</button>
+                <button class="btn-product-top2"><i class="bi bi-chevron-double-right"></i></button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </content>
+
+  <footer>
+    <div class="container-md">
+        <div class="row  ">
+
+            <div class="col-lg-4 gy-4 gy-lg-0">
+                <div class="footer-logo-img">
+                    <img src="./img/logo.png" width="207px" alt="">
+                </div>
+            </div>
+            <div class="col-lg-4 gy-4 gy-lg-0">
+                <div class="social-icon">
+                    <span class="social-icon-icon"><i class="fa-brands fa-facebook-f"></i></span>
+                    <span class="social-icon-icon"><i class="fa-brands fa-twitter"></i></span>
+                    <span class="social-icon-icon"><i class="fa-brands fa-tiktok"></i></span>
+                </div>
+            </div>
+            <div class="col-lg-4 gy-4 gy-lg-0">
+                <div class="footer-Information2">
+                    <p>024 2260 2028</p>
+                    <span> 8.00 am - 8.00 pm</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <p class="license">ThemeREX © 2022. All rights reserved.</p>
+</footer>
+  <button class="btn-scroll-top" onclick="handleScrollTop()">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+  <script src="./main.js"></script>
+  <script>
+    function handleScrollTop() {
+      window.scrollTo(0, 0);
+    }
+    window.onscroll = () => {
+      let header = document.querySelector("header")
+      let scrollTop = document.querySelector(".btn-scroll-top")
+      if (document.documentElement.scrollTop > 50 || document.body.scrollTop > 50) {
+        header.style.position = "fixed";
+        header.style.top = 0;
+        header.style.left = 0;
+        header.style.right = 0;
+        header.style.paddingTop = 0;
+        header.style.background = "#52a34b";
+        header.style.animation = "fadeInleft 0.5s ease forwards";
+
+        scrollTop.style.display = "block"
+
+      } else {
+        header.style.position = "absolute";
+        header.style.paddingTop = "50px";
+        header.style.left = 0;
+        header.style.right = 0;
+        header.style.background = "transparent";
+        header.style.animation = "unset";
+
+        scrollTop.style.display = "none"
+
+      }
+    }
+
+
+    
+
+
+  </script>
+</body>
+
+</html>

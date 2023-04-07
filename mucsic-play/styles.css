@@ -1,0 +1,170 @@
+html {
+    box-sizing: border-box;
+    
+}
+
+label,
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+   
+}
+.cantainer {
+    position: relative;
+    height: 900px;
+    width: 100%;
+    display: inline-block;
+    background: url("https://scontent.fhan5-8.fna.fbcdn.net/v/t39.30808-6/278915809_2300080836823777_3856368895449595769_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=0debeb&_nc_ohc=oTtS1b_Pw8YAX-Y1ZCj&_nc_ht=scontent.fhan5-8.fna&oh=00_AT8FSll5HB2P-AFL5uy7sLtdtyGH1kxUJo4HBPie_i01vg&oe=62697B35") center / cover no-repeat;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+.music {
+    width: 500px;
+    margin:50px auto  0;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: rgba(100, 100, 101, 0) 0px 7px 29px 0;
+    padding: 35px 15px 30px;
+}
+
+.music-thumb {
+
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 25px;
+}
+
+
+.music-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #ffb86c, 0 0 0 6px white, 0 0 0 9px #ff6bcb;
+}
+
+.music-name {
+    font-style: 18px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 40px;
+}
+
+.controls {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+  gap: 0 60px;
+}
+
+.play {
+   position: relative;
+}
+.play::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(to right bottom, #ff6bcb, #ffb86c);
+    transform: scale(1.5);
+    border-radius: 50px;
+}
+.play-inner {
+    width: 45px;
+    height: 45px;
+    border-radius: 100rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-style: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px, 0 0 0 10px blueviolet; */
+    position: relative;
+    z-index: 2;
+}
+.play-repeat,
+.play-back,
+.play-forward {
+    cursor: pointer;
+}
+
+.range {
+    -webkit-appearance: none; 
+    width: 100%; 
+    background: transparent; 
+    margin-bottom: 20px;
+}
+.range::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 4px;
+    background-color: rgb(243, 235, 235);
+}
+
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: #20e2b2;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    box-shadow: 0 0 0 5px white, 0 0 0 7px rgba(100, 100, 101, 0);
+    margin-top: -5px;
+}
+
+.music-thumb.is-play {
+    animation: spinner 10s infinite linear;
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+.play-repeat.active {
+    color: #20e2b2;
+}
+.play-infinity.active {
+    color: #20e2b2;
+}
+
+.text-content {
+    position:absolute;
+    bottom: 50px;
+    color: hsl(356, 100%, 97%);
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.text-content h2 {
+    font-size: 34px;
+    text-shadow: -2px 6px 8px red;
+    font-style: italic;
+    font-family: initial;
+    margin-bottom: 10px;
+}
+.text-content p {
+    font-size: 20px;
+    font-style: oblique;
+    text-shadow: -1px -2px 0px #911818;
+}
+
+

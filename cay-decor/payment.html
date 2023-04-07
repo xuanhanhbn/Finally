@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Thanh Toán</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon"
+        href="https://images.pexels.com/photos/2137388/pexels-photo-2137388.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./media.css">
+</head>
+
+<body style="background: rgba(218, 218, 218, 0.17);">
+
+    <div style="background: rgb(82, 163, 75);">
+        <div class="container-md">
+            <div class="header-payments" style="height: 100px;">
+                <a href="./index.html"><img src="./img/logo.png" alt="" style="height: 46px;"></a>
+                <span class="payment-title">Thanh Toán</span>
+            </div>
+            <div class="modal-cart">
+                <div class="modal-information-user">
+                    <span class="modal-user-title">Thêm địa chỉ</span>
+                    <form action="" class="form-2">
+                        <div class="d-flex justify-content-between">
+                            <div id="name" class="form-group">
+                                <input name="name" type="text" placeholder="Họ và  tên">
+                                <span class="form-message"></span>
+                            </div>
+                            <div id="phone" class="form-group">
+                                <input name="phone" type="text" placeholder="Số điện thoại">
+                                <span class="form-message"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <select name="city" id="city">
+                                <option value="" disabled="disabled" selected="selected">Tỉnh/Thành phố</option>
+                                <option>Hà nội</option>
+                                <option>Hồ Chí Minh</option>
+                                <option>Quảng Ninh</option>
+                                <option>Thanh Hóa</option>
+                                <option>Hà Nam</option>
+                                <option>Thái Bình</option>
+                            </select>
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <select name="district" id="district">
+                                <option value="" disabled="disabled" selected="selected">Quận/Huyện</option>
+                            </select>
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="address" name="address" type="text"
+                                placeholder="Địa chỉ cụ thể ..."></textarea>
+                            <span class="form-message"></span>
+                        </div>
+
+
+
+                        <div class="d-flex justify-content-end footer-information">
+                            <button class="btn next">TIẾP TỤC</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <content>
+        <div class="container-md">
+
+            <div class="delivery-address">
+                <p class="information-content information-content2">
+                    <i class="fa-solid fa-location-dot" style="margin-right: 8px;"></i>
+                    Địa Chỉ Nhận Hàng
+                </p>
+                <div>
+                    <span class="user-name">Huy Lam Pham (+84) 696666666</span>
+                    <p class="payment-address">38 trần quốc Vượng, Phường Dịch Vọng Hậu, Quận Cầu Giấy, Hà Nội</p>
+                    <span class="change-address">THAY ĐỔI</span>
+                </div>
+
+                <p class="icon-right">
+                    <i class="fa-solid fa-chevron-right "></i>
+                </p>
+
+            </div>
+
+            <div class="payment-products-container">
+                <div class="row align-items-center d-none d-md-flex">
+                    <div class="col-6 col-lg-7">
+                        <span class="payment-products-text category-products">Sản Phẩm</span>
+                    </div>
+                    <div class="col-6 col-lg-5">
+                        <div class="row">
+                            <div class="col-7">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <span class="payment-products-text"> Đơn giá </span>
+                                    </div>
+                                    <div class="col-6">
+                                        <span class="payment-products-text">Số lượng</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <span class="payment-products-text into-money-title">Thành tiền</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- product payment -->
+                <div class="payment-item-products">
+
+                    <div class="payment-products">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 col-lg-7 col-12">
+                                <div class="payment-products-left">
+                                    <img src="./img/c4.png" alt="">
+                                    <div class="d-block">
+                                        <p>Chậu Xi Măng Fiber Trứng Xám Viền Trắng Vàng Gold Kim Tiền</p>
+                                        <span>Cây + Chậu nhựa đen (LC3018-1)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-5 col-12">
+                                <div class="row">
+                                    <div class="payment-products-right">
+                                        <div class="col-md-6 col-10 col-sm-7">
+                                            <div class="row flex-md-row flex-row-reverse">
+                                                <div class="col-6">
+                                                    <span class="payment-products-price"> 1.335.000₫ </span>
+                                                </div>
+                                                <div class="col-6">
+                                                    <span class="payment-products-quantity"> x <span> 2</span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-5 d-none d-md-block">
+                                            <span class=" payment-products-money into-money-title">2.670.000₫</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="payment-products">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 col-lg-7 col-12">
+                                <div class="payment-products-left">
+                                    <img src="./img/c4.png" alt="">
+                                    <div class="d-block">
+                                        <p>Chậu Xi Măng Fiber Trứng Xám Viền Trắng Vàng Gold Kim Tiền</p>
+                                        <span>Cây + Chậu nhựa đen (LC3018-1)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-5 col-12">
+                                <div class="row">
+                                    <div class="payment-products-right">
+                                        <div class="col-md-6 col-10 col-sm-7">
+                                            <div class="row flex-md-row flex-row-reverse">
+                                                <div class="col-6">
+                                                    <span class="payment-products-price"> 1.335.000₫ </span>
+                                                </div>
+                                                <div class="col-6">
+                                                    <span class="payment-products-quantity"> x <span> 2</span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-5 d-none d-md-block">
+                                            <span class=" payment-products-money into-money-title">2.670.000₫</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="payment-producst-code">
+                    <div class="payment-delivery">
+                        <div>
+                            <p> <i class="fa-solid fa-truck"></i> Được giao bởi RUBY2</p>
+                            <span class="payment-delivery-price">99.000₫ </span>
+                        </div>
+                    </div>
+                    <div class="enter-discount-code">
+                        <input type="text" placeholder="Nhập mã giảm giá">
+                        <button>Áp dụng</button>
+                    </div>
+                </div>
+                <div class="the-total-amount">
+                    <p>Tổng số tiền ( <span class="payment-all-quatity">2</span> sản phẩm ):</p>
+                    <span class="all-price-products ">5.340.000₫</span>
+                </div>
+            </div>
+
+            <div class="payments-method-products">
+                <div class="method-products-title">
+                    <p>Phương thức thanh toán</p>
+                </div>
+
+                <div class="payments-method">
+                    <div>
+                        <div class="d-flex align-items-center check-padding">
+                            <input type="radio" name="payments" id="bank">
+                            <label for="bank"> Chuyển tiền qua ngân hàng</label>
+                        </div>
+                        <div class="method-bank">
+                            <p>Vui lòng chuyển khoản đến các TK ngân hàng của Cây Decor như sau:</p>
+                            <p> <span>* STK:</span> 0021000939412 tại Vietcombank - Chi nhánh Hà Nội</p>
+                            <p> <span>* STK:</span> 11024650795014 tại Techcombank- Chi nhánh Đông Đô</p>
+                            <p> <span>Chủ TK:</span> Bùi Thị Hà Lan</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center check-padding">
+                        <input type="radio" name="payments" id="when-receiving" checked="checked">
+                        <label for="when-receiving"> Thanh toán khi giao hàng (COD)</label>
+                    </div>
+                </div>
+
+                <div class="payment-footer">
+                    <div class="payment-footer-text">
+                        <div>
+                            <p>Tổng tiền hàng</p>
+                            <span class="all-price-products pay-font">5.340.000₫</span>
+                        </div>
+                        <div>
+                            <p>Phí vận chuyển</p>
+                            <span class="payment-delivery-price  pay-font">99.000₫ </span>
+                        </div>
+                        <div>
+                            <p>Tổng cộng Voucher giảm giá:
+                            </p>
+                            <span>0₫ </span>
+                        </div>
+                        <div>
+                            <p>Tổng thanh toán:</p>
+                            <span class="total-price-payment">5.439.000₫</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pay-order">
+                    <p>Bằng việc tiến hành Đặt Mua, bạn đồng ý với các Điều kiện Giao dịch chung </p>
+
+                    <div class="d-flex justify-content-end">
+                        <button class="btn-pay-order">ĐẶT HÀNG</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </content>
+
+    <footer>
+        <div class="container-md">
+            <div class="row  ">
+
+                <div class="col-lg-4 gy-4 gy-lg-0">
+                    <div class="footer-logo-img">
+                        <img src="./img/logo.png" width="207px" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4 gy-4 gy-lg-0">
+                    <div class="social-icon">
+                        <span class="social-icon-icon"><i class="fa-brands fa-facebook-f"></i></span>
+                        <span class="social-icon-icon"><i class="fa-brands fa-twitter"></i></span>
+                        <span class="social-icon-icon"><i class="fa-brands fa-tiktok"></i></span>
+                    </div>
+                </div>
+                <div class="col-lg-4 gy-4 gy-lg-0">
+                    <div class="footer-Information2">
+                        <p>024 2260 2028</p>
+                        <span> 8.00 am - 8.00 pm</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <p class="license">ThemeREX © 2022. All rights reserved.</p>
+    </footer>
+
+    <div id="notification">
+
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

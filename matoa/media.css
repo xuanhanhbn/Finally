@@ -1,0 +1,136 @@
+@media (max-width: 992px) {
+    .slide-item {
+        height: auto;
+    }
+    .side-btn {
+        margin-bottom: 20px;
+    }
+    .slide-img {
+        position: unset;
+        max-width: 100%;
+    }
+    .section-item img {
+        width: 100%;
+    }
+    .img-news {
+        max-width: 100%;
+    }
+    .background-fake {
+        right: -60px;
+    }
+    .background-fake2 {
+        display: none;
+    }
+    .slide-text {
+        font-size: 30px;
+         line-height: 40px;
+    }
+}
+@media (max-width: 768px) {
+    
+    
+    .slide-btn1 {
+        width: 140px;
+         height: 42px;
+    }
+    .slide-btn2 {
+        width: 130px;
+        height: 42px;
+    }
+    .background-fake {
+        display: none;
+    }
+    .add-product{
+        display: block;
+    }
+    .section-card {
+        width: 100%;
+    }
+    .tab-content-img {
+        width: 100%;
+    }
+    .tab-item {
+        font-size: 16px;
+        padding: 0;
+    }
+    .item-product-right input {
+        width: 250px;
+    }
+    .tatol-mone-text {
+        display: flex;
+    }
+    .into-origin {
+        justify-content: space-between;
+    }
+    .tatol-mone {
+        justify-content: end;
+        margin-top: 10px;
+    }
+    .tatol-mone-text {
+        align-items: center;
+    }
+    .js-old-price {
+        margin-right: 20px;
+    }
+    .into-money {
+        display: block ;
+    }
+
+    /* .checkout-content > div:first-child {
+        width: 100%;
+    } */
+    /* .checkout-content {
+        display: block;
+    } */
+    .pane2::after {
+        width: 40px;
+        right: -50px
+    }
+    .pane2+.pane2 {
+        margin-left: 60px;
+    }
+   .tabs-pane-checkout:last-child > div {
+    flex-wrap: wrap-reverse;
+   }
+}
+@media (max-width: 576px) {
+    .tab-item {
+        min-width: auto;
+    }
+    .tab-item + .tab-item {
+        padding: 5px;
+    }
+    .product-revew-img {
+        display: flex;
+    }
+    .product-revew-img img {
+        width: 25%;
+    }
+   
+    
+  .section-item {
+    padding: 15px 8px 0 15px;
+  }  
+  .item-product-cart { 
+      display: block;
+  }
+  .item-product-left {
+    width: 100%;
+  }
+ .item-product-right {
+        position: relative;
+        /* display: flex; */
+        justify-content: space-between;
+        /* flex-direction: row-reverse; */
+  }
+  .input-cart {
+      display: flex;
+      justify-content: end;
+  }
+  .justify-content-end div:first-child {
+      height: 50%;
+  }
+  .item-product-left div:first-child {
+    width: 140px;
+  }
+}

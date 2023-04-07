@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500:600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./font/fontawesome-free-6.1.1-web/css/all.min.css">
+    <title>MP3 Player</title>
+</head>
+
+<body>
+    <div class="cantainer"> 
+        <div class="music">
+            <div class="music-thumb">
+                <img src="https://scontent.fhan5-9.fna.fbcdn.net/v/t39.30808-6/278509942_2299438550221339_7959471600928145795_n.jpg?stp=dst-jpg_p960x960&_nc_cat=109&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=gahub5GALiMAX-75Kov&_nc_oc=AQn-QlDDDeVsP_hLq9kmR2TPCzNwc8MzSr3bOrqz29pga_yDrQHnkdJv-276tuLoWmA&_nc_ht=scontent.fhan5-9.fna&oh=00_AT_e7RcPWFaX7LUn38ny_BSQGk0aR_A0pkkepAiLrQYQmw&oe=6268079C"
+                    alt="">
+            </div>
+            <div class="music-name">Bar 1900</div>
+            <input type="range" name="range" id="range" class="range">
+            <audio src="./music/song2.mp3" id="song"></audio>
+            <div class="time">
+                <div class="duration">2:10</div>
+                <div class="remaining">-3:0</div>
+            </div>
+            <div class="controls">
+                <i class="fa-solid fa-infinity play-infinity "></i>
+                <i class="fa-solid fa-backward play-back"></i>
+                <div class="play">
+                    <div class="play-inner">
+                        <i class="fa-solid fa-play blay-icon"></i>
+                    </div>
+                </div>
+                <i class="fa-solid fa-forward play-forward"></i>
+                <i class="fa-solid fa-repeat play-repeat"></i>
+            </div>
+        </div >
+
+        <div class="text-content">
+            <h2>1900</h2>
+            <p>@1900.hn  · Câu lạc bộ đêm & khiêu vũ</p>
+        </div>
+    </div>
+    <script src="script.js" ></script>
+</body>
+
+</html>

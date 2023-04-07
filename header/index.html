@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="themify-icons/themify-icons.css">
+    <title>Document</title>
+    <style>
+         body {
+             margin: 200px 0;
+         }
+         .cantainer {
+            width: 1200px;
+            max-width: 1200px;
+            margin: 0 auto;
+             display: flex;
+         }
+        header {
+           background: red;
+        }
+        .items {
+            margin: 0;
+            background: #fff;
+            list-style: none;
+            width: 220px;
+            padding: 0;
+            box-shadow: 0 1px 2px #ebe8e8;
+            border:2px solid #ebe8e8;
+            position: relative;
+        }
+
+       
+
+        li > a {
+            display:block;
+            text-decoration: none;
+            color: #757575;
+            font-size: 13px;
+            padding: 8px 0 0 8px ;
+            line-height: 20px;
+        }
+        .product > li:hover > a,
+        .items > li:hover > a {
+            color: #f36d00;
+            background: #dcdcdc;
+        }
+
+        .items-all {
+            display: block;
+        }
+
+        .icon {
+            float: right;
+            display: none;
+            font-size: 15px;
+             font-weight: bold;
+        }
+       
+        .product {
+            position: absolute;
+            right: -205px;
+            padding: 0;
+            top: -2px;
+            list-style: none;
+            width: 200px;
+            box-shadow: 0 1px 2px #ebe8e8;
+            display: none;
+            border: 2px solid #ebe8e8;
+            height: 100%;
+            z-index: 1;
+            background: #fff;
+        }
+        .items > li:hover > a > i,
+       .items-all:hover .product {
+         display: block;
+       }
+    .img {
+        width: 100%;
+        height: 100%;
+      
+    }
+    .items-img {
+        width: 980px;
+        height: 342px;
+    }
+    </style>
+</head>
+
+<body>
+    fđ
+
+    
+    <header>
+        <div class="cantainer">
+            <ul class="items">
+                <li class="items-all"><a href="#"> <span>Thiết Bị Điện Tử</span>  <i class="ti-angle-right icon"></i></a>
+                    <ul class="product">
+                        <li><a href="#">Điện thoại di động</a></li>
+                        <li><a href="#">Máy tính bảng</a></li>
+                        <li><a href="#">Laptop</a></li>
+                        <li><a href="#">Máy tính để bàn</a></li>
+                        <li><a href="#">Âm thanh</a></li>
+                        <li><a href="#">Camera giám sát</a></li>
+                        <li><a href="#">Máy ảnh kỉ thuật số</a></li>
+                        <li><a href="#">Màn hình tivi</a></li>
+                        <li><a href="#">Máy in</a></li>
+                        <li><a href="#">Đồng hồ thông minh</a></li>
+                        <li><a href="#">Máy chơi game</a></li>
+                    </ul>
+                </li>
+                <li class="items-all"><a href="#"> <span>Phụ Kiện Điện Tử</span> <i class="ti-angle-right icon"></i></a>
+                    <ul class="product">
+                        <li><a href="#">Phụ kiện di động</a></li>
+                        <li><a href="#">Thiết bị số</a></li>
+                        <li><a href="#">Phụ kiện máy bay camera</a></li>
+                        <li><a href="#">Linh kiện máy tính</a></li>
+                        <li><a href="#">Phụ kiện máy tính</a></li>
+                        <li><a href="#">Phụ kiện ống kính</a></li>
+                        <li><a href="#">Thiết bị số</a></li>
+                    </ul>
+                </li>
+                <li class="items-all"><a href="#"> <span>TV & Thiết Bị Điện Gia Dụng</span> <i class="ti-angle-right icon"></i></a>
+                    <ul class="product">
+                        <li><a href="#">Tivi & Video</a></li>
+                        <li><a href="#">Điện gia dụng nhỏ</a></li>
+                        <li><a href="#">Điện gia dụng lớn</a></li>
+                        <li><a href="#">Phụ kiện Tivi</a></li>
+                    </ul>
+                </li>
+                <li class="items-all"><a href="#"> <span>Sức Khỏe & Làm Đẹp</span> <i class="ti-angle-right icon"></i></a>
+                    <ul class="product">
+                        <li><a href="#">Chăm sóc da</a></li>
+                        <li><a href="#">Trang điểm</a></li>
+                        <li><a href="#">Dụng cụ làm đẹp</a></li>
+                        <li><a href="#">Chăm sóc tóc</a></li>
+                        <li><a href="#">Chăm sóc cá nhân</a></li>
+                        <li><a href="#">Dành Cho Nam Giới</a></li>
+                        <li><a href="#">Thực Phẩm Chức Năng </a></li>
+                        <li><a href="#">Thực Phẩm cho sắc đẹp</a></li>
+                        <li><a href="#">Thiết Bị Y Tế</a></li>
+                    </ul>
+                </li>
+                <li class="items-all"><a href="#"> <span>Hàng Mẹ, Bé & Đồ Chơi</span> <i class="ti-angle-right icon"></i></a> </li>
+                <li class="items-all"><a href="#"> <span>Siêu Thị Tạp Hóa</span> <i class="ti-angle-right icon"></i></a> </li>
+                <li class="items-all"><a href="#"> <span>Hàng Gia dụng & Đời sống</span> <i class="ti-angle-right icon"></i></a> </li>
+                <li class="items-all"><a href="#"> <span>Thời Trang Nữ</span> <i class="ti-angle-right icon"></i></a></li>
+                <li class="items-all"><a href="#"> <span>Thời Trang Nam</span> <i class="ti-angle-right icon"></i></a> </li>
+                <li class="items-all"><a href="#"> <span>Phụ Kiện Thời Trang</span> <i class="ti-angle-right icon"></i></a> </li>
+                <li class="items-all"><a href="#"> <span>Thể Thao & Du Lịch</span> <i class="ti-angle-right icon"></i></a> </li>
+                <li class="items-all"><a href="#"> <span>Ôtô, Xe Máy & Thiết Bị Định Vị</span> <i class="ti-angle-right icon"></i></a> </li>
+            </ul>
+            <div class="items-img">
+                <img class="img" id="img" onclick="changeImage()" src="https://lzd-img-global.slatic.net/g/icms/images/ims-web/757bf38b-20e8-4a9b-8cb7-b1fc493ea229.jpg_2200x2200q90.jpg_.webp" alt="">
+            </div>
+        </div>
+        <script>
+            var index = 1;
+            changeImage = function() {
+                var imgs = [
+                    "https://lzd-img-global.slatic.net/g/icms/images/ims-web/757bf38b-20e8-4a9b-8cb7-b1fc493ea229.jpg_2200x2200q90.jpg_.webp",
+                    "https://lzd-img-global.slatic.net/g/icms/images/ims-web/468240cf-9638-4cde-bc35-057eb68b5fd3.jpg_2200x2200q90.jpg_.webp",
+                    "https://lzd-img-global.slatic.net/g/icms/images/ims-web/553f4c7c-777e-4ec8-99ec-4f6614148595.jpg_2200x2200q90.jpg_.webp",
+                    "https://lzd-img-global.slatic.net/g/icms/images/ims-web/4468e660-a4ab-4175-b869-7eb2803eee94.jpg_2200x2200q90.jpg_.webp",
+                    "https://lzd-img-global.slatic.net/g/icms/images/ims-web/2c8f1780-cb78-434e-9c96-51e5906a997a.jpg_2200x2200q90.jpg_.webp"
+                ];
+                document.getElementById('img').src = imgs[index];
+                index++;
+                if(index==5){
+                    index = 0;
+                }
+                
+            }
+            setInterval(changeImage
+               
+                ,1000);
+        </script>
+    </header>
+</body>
+
+</html>

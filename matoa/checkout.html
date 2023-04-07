@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./media.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+
+            <div class="logo">
+                <a href=""><img src="https://loan9202.github.io/bootstrap_project/source/images/image_5.png" alt=""></a>
+            </div>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId"
+                aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mt-2 mt-lg-0 d-flex " style="margin: auto; ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Watches </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Eyewear</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Accessories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mt-2 mt-lg-0 align-items-lg-center">
+                    <li class="nav-item"> <i class="bi bi-search" style="font-size: 19px;"></i></li>
+                    <li class="nav-item d-flex">
+                        <i class="bi bi-person" style="margin-right: 4px;font-size: 19px"></i>
+                        <a class="nav-link" href="#" style="padding: 0;">Log In</a>
+                    </li>
+                    <li class="nav-item cart-border position-relative">
+                        <i class="bi bi-cart-plus" style="font-size: 22px;"></i>
+                        <div id="cart-quantity">0</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal-cart">
+                <div class="modal-cantainer">
+                    <div class="incon-delete-modal">
+                        <i class="bi bi-x-lg "></i>
+                    </div>
+                    <div class="add-item-cart">
+
+                    </div>
+                    <div class="img-cart-no-product">
+                        <div class="content-no-product">
+                            <img src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/cart/9bdd8040b334d31946f49e36beaf32db.png
+                            " alt="">
+                            <p>Giỏ hàng của bạn còn trống</p>
+                        </div>
+                    </div>
+                    <div class="into-moneys">
+                        <div class="into-money ">
+                            <div class="d-flex into-origin">
+                                <div>Kode Promo</div>
+                                <div class="country">INDONESIA</div>
+                                <div style="color: #01522D;font-weight: 500;">35% OFF</div>
+                            </div>
+                            <div class="tatol-mone ">
+                                <p>Subtotal</p>
+                                <div class="tatol-mone-text ms-4">
+                                    <p class=" mb-0 old-price d-flex justify-content-end js-old-price">Rp 1.264.000</p>
+                                    <div class="total-cart"> Rp <span></span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-modal">
+                        <button class="checkout-modal">Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="my-3">
+            <div class="table-of-contents">
+                <div class="pane2 active" style="position: relative;">
+                    <i class="bi bi-basket-fill"></i>
+                    1. Checkout
+                </div>
+
+                <div class="pane2" style="position: relative;">
+
+                    <i class="bi bi-credit-card-2-front"></i>
+                    2. Payment
+                </div>
+                <div class="pane2" style="position: relative;">
+                    <i class="bi bi-menu-up"></i>
+                    3. Confirmation
+                </div>
+            </div>
+
+            <div class="tabs-checkout">
+                <div class="tabs-pane-checkout" >
+                    <div class="row">
+                        <div class="col-6">
+                            <div style="background: #FFFFFF; padding: 18px;">
+                                <h3 style="font-weight:600; margin: 10px 0 20px 0">Detail Order</h3>
+                                <div class="checkout-content">
+                                    <div class="subtotal">Subtotal</div>
+                                    <div>Rp 2.152.000</div>
+                                </div>
+                                <div class="checkout-content">
+                                    <div class="shipping-cost">Shipping Cost</div>
+                                    <div>Rp 500.000</div>
+                                </div>
+                                <div class="checkout-content">
+                                    <div class="promo-code">Promo Code</div>
+                                    <div>INDONESIA</div>
+                                </div>
+                                <div class="checkout-content">
+                                    <div class="packaging">Packaging</div>
+                                    <div> Rp 50.000</div>
+                                </div>
+                                <hr>
+                                <div class="checkout-content">
+                                    <div class="grand-total"> Grand Total</div>
+                                    <span>Rp 2.702.000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="checkout-information " style="background: #FFFFFF; padding: 18px;">
+                                <h3 style="font-weight:600; padding: 10px 0 20px 0">Billing Address</h3>
+                                <div class="fullname">
+                                    <label for="">Fullname</label>
+                                    <p>Ex: <span>Rasyidin Arsyad Nasution</span> </p>
+                                </div>
+                                <div class="email-address">
+                                    <label for="">Email Address</label>
+                                    <p>Ex: <span>rasyid.arsyad@gmail.com</span></p>
+                                </div>
+                                <div class="phone-number">
+                                    <label for="">Phone Number</label>
+                                    <p>Ex: <span>089111888999</span></p>
+                                </div>
+                                <div class="shipping-address">
+                                    <label for="">Shipping Address</label>
+                                    <p>Ex: <span> Patriot Street Number 666, Ngaklik, Sleman</span></p>
+                                </div>
+                                <div class="countrys" style="position:relative;">
+                                    <label for="">Country</label>
+                                    <p>United State of America (USA)</p>
+                                    <i class="bi bi-chevron-down icon-checkout"></i>
+                                </div>
+                                <div class="state" style="position:relative;">
+                                    <label for="">State/Province</label>
+                                    <p>California</p>
+                                    <i class="bi bi-chevron-down icon-checkout"></i>
+                                </div>
+                                <div class="citys">
+                                    <div class="city" style="position:relative;">
+                                        <label for="">City</label>
+                                        <div>San Francisco</div>
+                                        <i class="bi bi-chevron-down icon-checkout"></i>
+                                    </div>
+                                    <div class="zip-code">
+                                        <label for="">Zip-Code</label>
+                                        <p>Ex: <span>94024</span></p>
+                                    </div>
+                                </div>
+                                <div class="choose-courier" style="position:relative;">
+                                    <label for="">Choose Courier</label>
+                                    <div>DHL</div>
+                                    <i class="bi bi-chevron-down icon-checkout"></i>
+                                </div>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+                                <button class="btn continue-shopping">Continue Shopping</button>
+                                <button class="btn  play-order">Place My Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs-pane-checkout">
+                    <div class="row">
+                        <div class="col-6">
+                            <div style="background: #FFFFFF; padding: 18px;">
+                                <h3 style="font-weight:600; margin: 10px 0 20px 0">Detail Order</h3>
+                                <div class="checkout-content">
+                                    <div class="subtotal">Subtotal</div>
+                                    <div>Rp 2.152.000</div>
+                                </div>
+                                <div class="checkout-content">
+                                    <div class="shipping-cost">Shipping Cost</div>
+                                    <div>Rp 500.000</div>
+                                </div>
+                                <div class="checkout-content">
+                                    <div class="promo-code">Promo Code</div>
+                                    <div>INDONESIA</div>
+                                </div>
+                                <div class="checkout-content">
+                                    <div class="packaging">Packaging</div>
+                                    <div> Rp 50.000</div>
+                                </div>
+                                <hr>
+                                <div class="checkout-content">
+                                    <div class="grand-total"> Grand Total</div>
+                                    <span>Rp 2.702.000</span>
+                                </div>
+                            </div>
+                            <div style="background: #FFFFFF; padding: 18px; margin-top: 20px;">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <h3>Payment Detail</h3>
+                                    <div class="payment-price">11:55:55</div>
+                                </div>
+                                <p>Please make a payment according with the limit time specified, starting from now</p>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="order-detai" style="background: #FFFFFF; padding: 18px; height: 100%;">
+                                <h3 style="font-weight:600; padding: 10px 0 20px 0">Order Details</h3>
+
+                                <div class="order-number">
+                                    <div class="label">Order Number</div >
+                                    <div>
+                                        <div class="code-orders">
+                                            <p>MTAWEB-3A86D4DB</p>
+                                            <span class="copy">COPY</span>
+                                        </div>
+                                        <span>Always remember Order Number for easy tracking</span>
+                                    </div>
+                                </div>
+                                <div class="purchase-date">
+                                    <div class="label">Purchase Date</div >
+                                    <p>2019-11-07 14:01:48s</p>
+                                </div>
+                                <div class="items-product">
+                                    <div class="label">Items</div >
+                                    <div>
+                                        <p>Way Kambas Mini Ebony</p>
+                                        <span>2 x IDR 1.024.000</span>
+                                        <p>Sikka (Ebony & Mapple)</p>
+                                        <span>1 x IDR 1.264.000</span>
+                                    </div>
+                                </div>
+                                <div class="name">
+                                    <div class="label">Name</div>
+                                    <div>Rasyidin Arsyad Nasution</div>
+                                </div>
+                                <div class="phone">
+                                    <div class="label">Phone</div>
+                                    <p>+18911188899</p>
+                                </div>
+                                <div class="email">
+                                    <div class="label">Email</div>
+                                    <p>rasyid.arsyad@gmail.com</p>
+                                </div>
+                                <div class="shipping-address2">
+                                    <div class="label">Shipping Address</div >
+                                    <p>18 Richardson Drive Fountain Valley, CA 92708</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="payment-method"  >
+                        <h3 style="font-weight:600; padding: 10px 0 20px 0"> Payment Method</h3>
+                        <div class="row">
+                            <div class="col-3">
+                                <div>
+                                    <input type="radio" name="" id="">
+                                    <label for="">BNI Cicilan 0%</label>
+                                </div>
+                                <img src="./src/image 42.png" alt="">
+                            </div>
+                            <div class="col-3">
+                                <div>
+                                    <input type="radio" name="" id="">
+                                    <label for="">BNI Cicilan 0%</label>
+                                </div>
+                                <img src="./src/image 43.png" alt="">
+                            </div>
+                            <div class="col-3">
+                                <div>
+                                    <input type="radio" name="" id="">
+                                    <label for="">BNI Cicilan 0%</label>
+                                </div>
+                                <img src="./src/image 44.png" alt="">
+                            </div>
+                            <div class="col-3">
+                                <div>
+                                    <input type="radio" name="" id="">
+                                    <label for="">BNI Cicilan 0%</label>
+                                </div>
+                                <img src="./src/image 46.png" alt="">
+                                <img src="./src/image 37 (1).png" alt="">
+                            </div>
+
+                            
+                        </div>
+                        <div class="row" >
+                            <div class="col-8">
+                                <div>
+                                    <input type="radio" name="" id="">
+                                    <label for="">Credit Card Cicilan 0% (Danamon, UOB & Standard Chartered)</label>
+                                </div>
+                                <img src="./src/image 42.png" alt="">
+                                <img src="./src/image 43.png" alt="">
+                                <img src="./src/image 44.png" alt="">
+                            </div>
+                            <div class="col-4" style="display: flex;">
+                                <div class="col-6">
+                                    <div>
+                                        <input type="radio" name="" id="">
+                                        <label for="">GO-PAY</label>
+                                    </div>
+                                    <img src="./src/image 46.png" alt="">
+                                </div>
+                                <div class="col-6">
+                                    <div>
+                                        <input type="radio" name="" id="">
+                                        <label for="">Krdivo</label>
+                                    </div>
+                                    <img src="./src/image 37 (1).png" alt="">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="proceed-payment">
+                        <button class="btn ">Proceed Payment</button>
+                    </div>
+                </div>
+                <div class="tabs-pane-checkout">
+                    <div class="row">
+                        <div class="col-6">
+                            <div style="background: #FFFFFF; padding: 20px 50px; height: 100%;" >
+                                <img class="img-order-confirmed" src="./src/img111.png" alt="">
+                                <p>Order Confirmed</p>
+                                <span class="content-order-confirmed"> Your order have been confirmed, please wait and track your order</span>
+                                <div class=" track-page">Go to track page</div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="col-6">
+                            <div   style="background: #FFFFFF; padding: 18px; height: 100%;">
+                               
+                                <div class="delivery-time">
+                                    <div>
+                                        <i class="bi bi-clock"></i>
+                                        <span>10 days delivery</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-truck"></i>
+                                        <span>DHL Express</span>
+                                    </div>
+                                </div>
+                               
+                                <div class="total-items-checkout">
+                                    <div>
+                                        <p>Way Kambas Mini Ebony</p>
+                                        <span>2 x IDR 1.024.000</span>
+                                    </div>
+                                    <div>
+                                        <p>Sikka (Ebony & Mapple)</p>
+                                        <span>1 x IDR 1.264.000</span>
+                                    </div>
+                                </div>
+                                <div class="total-prict-checkout">
+                                    <div class="checkout-content ">
+                                        <div class="subtotal">Subtotal</div>
+                                        <div>Rp 2.152.000</div>
+                                    </div>
+                                    <div class="checkout-content ">
+                                        <div class="shipping-cost">Shipping Cost</div>
+                                        <div>Rp 500.000</div>
+                                    </div>
+                                    <div class="checkout-content ">
+                                        <div class="packaging">Packaging</div>
+                                        <div> Rp 50.000</div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="checkout-content ">
+                                    <div class="grand-total"> Grand Total</div>
+                                    <span>Rp 2.702.000</span>
+                                </div>
+                                <hr>
+                                <div class="checkout-content ">
+                                    <div class="shipping-address2">Shipping Address</div>
+                                    <p>18 Richardson Drive Fountain Valley, CA 92708</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <div style="background: #da5e42;">
+        <div class="container">
+
+            <div class="row">
+                <div class="col">
+                    <img class="section-card"
+                        src="	https://loan9202.github.io/bootstrap_project/source/images/image%2027.png" alt="">
+                </div>
+                <div class="col">
+                    <img class="section-card"
+                        src="	https://loan9202.github.io/bootstrap_project/source/images/image%2027.png" alt="">
+                </div>
+                <div class="col">
+                    <img class="section-card"
+                        src="	https://loan9202.github.io/bootstrap_project/source/images/image%2027.png" alt="">
+                </div>
+                <div class="col">
+                    <img class="section-card"
+                        src="	https://loan9202.github.io/bootstrap_project/source/images/image%2027.png" alt="">
+                </div>
+                <div class="col">
+                    <img class="section-card"
+                        src="	https://loan9202.github.io/bootstrap_project/source/images/image%2027.png" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img class="section-card"
+                        src="	https://loan9202.github.io/bootstrap_project/source/images/image%2027.png" alt="">
+                </div>
+                <div class="col">
+                    <img class="section-card"
+                        src="	https://loan9202.github.io/bootstrap_project/source/images/image%2027.png" alt="">
+                </div>
+                <div class="col">
+                    <img class="section-card"
+                        src="	https://loan9202.github.io/bootstrap_project/source/images/image%2027.png" alt="">
+                </div>
+                <div class="col">
+                    <img class="section-card"
+                        src="	https://loan9202.github.io/bootstrap_project/source/images/image%2027.png" alt="">
+                </div>
+                <div class="col">
+                    <img class="section-card"
+                        src="	https://loan9202.github.io/bootstrap_project/source/images/image%2027.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer style="background: #d84727;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-6 foorter-frames">
+                    <div style="margin-bottom: 10px">
+                        <img src="https://loan9202.github.io/bootstrap_project/source/images/image%2030.png" alt="">
+                    </div>
+                    <ul>
+                        <li>Address</li>
+                        <li>Store & Office Jl.</li>
+                        <li>Setrasari Kulon III, No.</li>
+                        <li>10-12, Sukarasa,</li>
+                        <li>Sukasari, Bandung, Jawa</li>
+                        <li>Barat, Indonesia 40152</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-6 foorter-frames">
+                    <h4 class="foorter-outstanding">Get in touch</h4>
+                    <div class="line" style="width: 50px;border-top: 1px solid #Ccc;"></div>
+                    <ul>
+                        <li class="call">
+                            <div>Phone</div> 022-20277564
+                        </li>
+                        <li class="call">
+                            <div>Store & Office Jl.</div> 0811-233-8899
+                        </li>
+                        <li class="call">
+                            <div>10-12, Sukarasa</div> 0811-235-9988
+                        </li>
+                        <div class=" channel-icon">
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-youtube"></i>
+                            <i class="bi bi-twitter"></i>
+                            <i class="bi bi-skype"></i>
+                        </div>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-6 foorter-frames">
+                    <h4 class="foorter-outstanding">Useful Link</h4>
+                    <div class="line" style="width: 50px;border-top: 1px solid #Ccc;"></div>
+                    <ul>
+                        <li>Address</li>
+                        <li>Store & Office Jl.</li>
+                        <li>Setrasari Kulon III, No.</li>
+                        <li>10-12, Sukarasa,</li>
+                        <li>Sukasari, Bandung, Jawa</li>
+                        <li>Barat, Indonesia 40152</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-6 foorter-frames">
+                    <h4 class="foorter-outstanding">Campaign</h4>
+                    <div class="line" style="width: 50px;border-top: 1px solid #Ccc;"></div>
+                    <ul>
+                        <li>Address</li>
+                        <li>Store & Office Jl.</li>
+                        <li>Setrasari Kulon III, No.</li>
+                        <li>10-12, Sukarasa,</li>
+                        <li>Sukasari, Bandung, Jawa</li>
+                        <li>Barat, Indonesia 40152</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="./matoa.js"></script>
+</body>
+
+</html>

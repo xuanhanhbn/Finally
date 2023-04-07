@@ -1,0 +1,818 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Trang Chủ</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon"
+        href="https://images.pexels.com/photos/2137388/pexels-photo-2137388.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./media.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+</head>
+
+<body class="js-index">
+
+    <header>
+        <div class="container-xl">
+            <nav class="navbar navbar-expand-lg header">
+                <div class="container-fluid header-container">
+                    <div class="header-logo">
+                        <a href="#">
+                            <img src="./img/logo.png" alt="ảnh logo">
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <i class="fa-solid fa-bars"></i>
+                        </span>
+                    </button>
+
+                    <div class="collapse navbar-collapse header-title" id="navbarSupportedContent">
+                        <ul class="navbar-nav navbar-nav-title mb-lg-0">
+                            <li class="nav-item home-page" style="background-color: rgba(0, 0, 0, 0.4)">
+                                <a href="./index.html">TRANG CHỦ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./introduce.html">GIỚI THIỆU</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./products.html">SẢN PHẨM</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">KÊNH SỈ/DỰ ÁN/CTV</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./contcact.html">LIÊN HỆ</a>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav mb-lg-0">
+                            <li class="nav-item login-user2 ">
+                                <span class="header-img-user ">
+                                    <i class="fa-solid fa-user"></i>
+                                </span>
+                                <span class="login-user">Đăng nhập</span>
+                                <span class="user-use"></span>
+                                <div class=" account">
+                                    <span class="account-text">Tài Khoản của tôi</span>
+                                    <span class="account-text login-out">Đăng xuất</span>
+                                </div>
+                            </li>
+                            <li class="nav-item header-cart">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span>0</span>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+
+
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- modal -->
+    <div class="modal-cart">
+
+        <div class="modal-cantainer">
+            <div class="modal-tite">
+                <span>Giỏ Hàng</span>
+                <div class="icon-delete-modal">
+                    <i class="bi bi-x-lg "></i>
+                </div>
+            </div>
+
+            <div class="add-item-cart">
+
+            </div>
+
+
+            <div class="img-cart-no-product" style="display: none;">
+                <div class="content-no-product">
+                    <img src="https://salt.tikicdn.com/desktop/img/mascot@2x.png" alt="">
+                    <p>Không có sản phẩm nào trong giỏ hàng của bạn <span>😢</span> </p>
+                    <button class="btn-shopping"><a href="./products.html">Tiếp Tục Mua Hàng</a> </button>
+                </div>
+            </div>
+
+            <div class="into-moneys">
+                <p>Tổng thanh toán (<span>2</span> Sản Phẩm):</p>
+                <div class="save">
+                    <span class="into-money">5.340.000₫</span>
+                    <p> <span>Tiết kiệm :</span> <span class="save-moneys">0₫</span></p>
+                </div>
+
+            </div>
+
+            <div class="footer-modal">
+                <button class="checkout-modal">Mua Hàng</button>
+            </div>
+        </div>
+
+        <div class="modal-login">
+            <div class="modal-login-tabs">
+                <div class="btn-login">Đăng nhập</div>
+                <div class="btn-register"> Đăng ký</div>
+            </div>
+
+            <form action="" class="form-1">
+
+                <div class="form-group">
+                    <label for="email" class="form-label">Nhập email</label>
+                    <input id="email" name="email" type="text" placeholder="VD: hung@gmail.com" class="form-control">
+                    <span class="form-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="form-label">Mật khẩu</label>
+                    <input id="password" name="password" type="password" placeholder="VD: 123456" class="form-control">
+                    <span class="form-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="password2" class="form-label">Nhập lại mật khẩu</label>
+                    <input id="password2" name="password2" type="password" placeholder="VD: 123456"
+                        class="form-control">
+                    <span class="form-message"></span>
+                    <span class="forgot-password">Quên mật khẩu</span>
+                </div>
+                <div class="footer-login d-flex justify-content-between ">
+                    <div class="d-flex align-items-center">
+                        <input id="remember-password" type="checkbox">
+                        <label for="remember-password"> Nhớ mật khẩu</label>
+                    </div>
+                    <button id="login">Đăng ký</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="modal-information-user">
+            <span class="modal-user-title">Địa Chỉ Nhận Hàng</span>
+            <form action="" class="form-2">
+                <div class="d-flex justify-content-between">
+                    <div id="name" class="form-group">
+                        <input name="name" type="text" placeholder="Họ và  tên">
+                        <span class="form-message"></span>
+                    </div>
+                    <div id="phone" class="form-group">
+                        <input name="phone" type="text" placeholder="Số điện thoại">
+                        <span class="form-message"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <select name="city" id="city">
+                        <option value="" disabled="disabled" selected="selected">Tỉnh/Thành phố</option>
+                        <option>Hà nội</option>
+                        <option>Hồ Chí Minh</option>
+                        <option>Quảng Ninh</option>
+                        <option>Thanh Hóa</option>
+                        <option>Hà Nam</option>
+                        <option>Thái Bình</option>
+                    </select>
+                    <span class="form-message"></span>
+                </div>
+                <div class="form-group">
+                    <select name="district" id="district">
+                        <option value="" disabled="disabled" selected="selected">Quận/Huyện</option>
+                    </select>
+                    <span class="form-message"></span>
+                </div>
+                <div class="form-group">
+                    <textarea id="address" name="address" type="text" placeholder="Địa chỉ cụ thể ..."></textarea>
+                    <span class="form-message"></span>
+                </div>
+
+
+
+                <div class="d-flex justify-content-end footer-information">
+                    <!-- <button class="btn come-back">TRỞ LẠI</button> -->
+                    <button class="btn next">TIẾP TỤC</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <div id="slider">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./img/slider-1.jpg" alt="">
+                    <div class="swiper-sider-title">
+                        <p class="swiper-sider-text"> BST PHONG CÁCH XA MẠC </p>
+                        <p>tropical style</p>
+                    </div>
+
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/slider-2.jpg" alt="">
+                    <div class="swiper-sider-title">
+                        <p class="swiper-sider-text">BST PHONG CÁCH BẮC ÂU </p>
+                        <p>tropical style</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/slider-3.jpg" alt="">
+                    <div class="swiper-sider-title">
+                        <p class="swiper-sider-text">BST PHONG CÁCH CÂY NHIỆT ĐỚI </p>
+                        <p>tropical style</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+    </div>
+
+
+    <content>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="introduce-left">
+                        <div class="introduce-left-first">
+                            <p class="introduce-title">Welcome to CÂY DECOR</p>
+                            <p>CHUYÊN GIA KIẾN TẠO KHÔNG GIAN XANH</p>
+                        </div>
+                        <div class="introduce-left-last">
+                            <p>Bên cạnh dịch vụ cung cấp cây cảnh và chăm sóc cây, chúng tôi là chuyên gia đưa giải pháp
+                                cây xanh vào trang trí nội thất tại văn phòng, tòa nhà, công trình cảnh quan. Đối với
+                                chúng tôi, được làm công việc mang cái đẹp đến cho cuộc sống là niềm hạnh phúc lớn.
+                                Chúng tôi coi sứ mệnh của mình không chỉ là cung cấp dịch vụ thật tốt mà còn lan tỏa
+                                được tình yêu thiên nhiên, yêu cây xanh đến mọi người.</p>
+                            <div class="introduce-call">
+                                <p>Phòng kinh doanh</p>
+                                <span>Tel: 024 2260 2028 / 29</span>
+                            </div>
+                        </div>
+                        <button onclick="handleintro()" class="introduce-left-btn">Xem chi tiết
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="introduce-right">
+                        <img src="https://caycanhnoithat.vn/2021/a2.jpg" alt="">
+                        <div class="introduce-right-text">
+                            <h1>
+                                <span>HƠN</span>
+                                15
+                                <span>NĂM KINH NGHIỆM <br> CUNG CẤP CÂY XANH</span>
+                            </h1>
+                            <span class="introduce-right-icon">
+
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="frames-slogan">
+            <div class="container">
+                <div style="text-align: center;">
+                    <h1>HÃY ĐỔI MỚI VÀ LÀM ĐẸP KHÔNG GIAN VĂN PHÒNG</h1>
+                    <div class="frames-slogan-btn">
+                        <button>Hotline: 0906225503</button>
+                        <button onclick="handleProduct()">Tham quan vườn cây <i class="fa-solid fa-arrow-right-long"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="icon-holder">
+                <span> <img src="./img/sc.png" alt=""></span>
+            </div>
+        </div>
+        <div class="service-home">
+            <div class="container">
+
+                <p class="service-home-title">CHÚNG TÔI CUNG CẤP DỊCH VỤ</p>
+
+                <div class="row gy-5">
+                    <div class="col-xl-3 col-12 col-sm-6">
+                        <div class="service-item">
+                            <div class="service-item-top">
+                                <div class="service-img">
+                                    <img src="./img/imgi1.png" alt="">
+                                    <div class="service-overlay-text">Thiết kế không gian xanh</div>
+                                </div>
+                                <div class="service-overlay">
+
+                                </div>
+
+                            </div>
+                            <div class="service-item-bottom">
+                                <div class="service-bottom-hover">
+                                    <div class="service-bottom-icon">
+                                        <img src="./img/imga1.png" alt="">
+                                        <h1> 01 </h1>
+                                    </div>
+                                    <div class="service-bottom-text">
+                                        <p>Thiết kế không gian xanh</p>
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </div>
+                                </div>
+                                <div class="service-bottom-hover2">
+                                    <p>Thiết kế giải pháp tạo nên không gian xanh cho các văn phòng, tòa nhà; thanh
+                                        lọc không khí trong môi trường làm việc.</p>
+                                    <span> <i class="fa-solid fa-arrow-right-long"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-12 col-sm-6">
+                        <div class="service-item">
+                            <div class="service-item-top">
+                                <div class="service-img">
+                                    <img src="./img/imga2.png" alt="">
+                                    <div class="service-overlay-text">Cung cấp cây cảnh văn phòng</div>
+                                </div>
+                                <div class="service-overlay">
+
+                                </div>
+
+                            </div>
+                            <div class="service-item-bottom">
+                                <div class="service-bottom-hover">
+                                    <div class="service-bottom-icon">
+                                        <img src="./img/iconl2.png" alt="">
+                                        <h1> 02 </h1>
+                                    </div>
+                                    <div class="service-bottom-text">
+                                        <p>Cung cấp cây cảnh văn phòng</p>
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </div>
+                                </div>
+                                <div class="service-bottom-hover2">
+                                    <p>Cho thuê cây xanh trang trí văn phòng, tòa nhà, với hơn 1000 sản phẩm cây cảnh,
+                                        bài trí theo phong cách tự nhiên và hiện đại</p>
+                                    <span> <i class="fa-solid fa-arrow-right-long"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-12 col-sm-6">
+                        <div class="service-item">
+                            <div class="service-item-top">
+                                <div class="service-img">
+                                    <img src="./img/imga3.png" alt="">
+                                    <div class="service-overlay-text">Cung cấp sản phẩm thiết kế</div>
+                                </div>
+                                <div class="service-overlay">
+
+                                </div>
+
+                            </div>
+                            <div class="service-item-bottom">
+                                <div class="service-bottom-hover">
+                                    <div class="service-bottom-icon">
+                                        <img src="./img/icona3.png" alt="">
+                                        <h1> 03 </h1>
+                                    </div>
+                                    <div class="service-bottom-text">
+                                        <p>Cung cấp sản phẩm thiết kế</p>
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </div>
+                                </div>
+                                <div class="service-bottom-hover2">
+                                    <p>Đi đầu trong sáng tạo, ứng dụng các loại vật liệu có giá trị thẩm mỹ cao trong
+                                        trang trí cây xanh, có nhiều sản phẩm thiết kế độc đáo, phù hợp với từng khách
+                                        hàng.</p>
+                                    <span> <i class="fa-solid fa-arrow-right-long"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-12 col-sm-6">
+                        <div class="service-item">
+                            <div class="service-item-top">
+                                <div class="service-img">
+                                    <img src="./img/imgi1.png" alt="">
+                                    <div class="service-overlay-text">Chăm sóc cây xanh cảnh quan</div>
+                                </div>
+                                <div class="service-overlay">
+
+                                </div>
+
+                            </div>
+                            <div class="service-item-bottom">
+                                <div class="service-bottom-hover">
+                                    <div class="service-bottom-icon">
+                                        <img src="./img/icona4.png" alt="">
+                                        <h1> 04 </h1>
+                                    </div>
+                                    <div class="service-bottom-text">
+                                        <p>Chăm sóc cây xanh cảnh quan</p>
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </div>
+                                </div>
+                                <div class="service-bottom-hover2">
+                                    <p>Quy trình dịch vụ chuyên nghiệp, cam kết tiêu chuẩn chất lượng rõ ràng, giám sát
+                                        chặt chẽ, báo cáo đầy đủ.</p>
+                                    <span> <i class="fa-solid fa-arrow-right-long"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <p class="space-review-title">SẢN PHẨM NỔI BẬT</p>
+            <div class="row gy-4 gy-xl-0">
+                <div class=" col-xl-3 col-sm-6 col-12">
+                    <div class="card" id-data="1">
+                        <div class="card-img">
+                            <img src="https://chaucay4.muathemewp.com/wp-content/uploads/2020/12/cay-kim-ngan-noi-that-3.jpg"
+                                class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Cây Kim Ngân nội thất</h5>
+                            <span class="price">5.222.000₫</span>
+                        </div>
+                        <span class="sale-off">-20%</span>
+                    </div>
+                </div>
+                <div class=" col-xl-3 col-sm-6 col-12">
+                    <div class="card" id-data="2">
+                        <div class="card-img">
+                            <img src="	https://chaucay4.muathemewp.com/wp-content/uploads/2020/12/cay-cau-lua-2.jpg"
+                                class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Cây Cau Lụa</h5>
+                            <span class="price">5.222.000₫</span>
+                        </div>
+                        <span class="sale-off">-20%</span>
+                    </div>
+                </div>
+                <div class=" col-xl-3 col-sm-6 col-12">
+                    <div class="card" id-data="3">
+                        <div class="card-img">
+                            <img src="	https://chaucay4.muathemewp.com/wp-content/uploads/2020/12/cay-trau-ba-de-vuong-noi-that-1.jpg"
+                                class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Cây Trầu Bà Đế Vương nội thất</h5>
+                            <span class="price">5.222.000₫</span>
+                        </div>
+                        <span class="sale-off">-20%</span>
+                    </div>
+                </div>
+                <div class=" col-xl-3 col-sm-6 col-12">
+                    <div class="card" id-data="7">
+                        <div class="card-img">
+                            <img src="	https://chaucay4.muathemewp.com/wp-content/uploads/2020/12/cay-ngu-gia-bi-noi-that.jpg"
+                                class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Cây Ngũ Gia Bì nội thất</h5>
+                            <span class="price">5.222.000₫</span>
+                        </div>
+                        <span class="sale-off">-20%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="space-review" style="margin-bottom: 60px;">
+            <div class="container">
+                <p class="space-review-title">KHÔNG GIAN CÂY XANH TẠI KHÁCH HÀNG</p>
+                <div class="row gy-4">
+                    <div class="col-xl-4 col-12 col-sm-6">
+                        <div class="space-review-item">
+                            <div class="space-review-img">
+                                <img src="./img/review1.png" alt="">
+                            </div>
+                            <div class="space-review-hover">
+                                <p>Văn phòng HSBC - IDMC</p>
+                            </div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-12 col-sm-6">
+                        <div class="space-review-item">
+                            <div class="space-review-img">
+                                <img src="./img/review2.png" alt="">
+                            </div>
+                            <div class="space-review-hover">
+                                <p>CÂY XANH TẠI VĂN PHÒNG VIREX</p>
+                            </div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-12 col-sm-6">
+                        <div class="space-review-item">
+                            <div class="space-review-img">
+                                <img src="./img/review3.png" alt="">
+                            </div>
+                            <div class="space-review-hover">
+                                <p>Cây xanh tại Samsung SEV</p>
+                            </div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-12 col-sm-6">
+                        <div class="space-review-item">
+                            <div class="space-review-img">
+                                <img src="./img/review4.png" alt="">
+                            </div>
+                            <div class="space-review-hover">
+                                <p>Cây xanh văn phòng tòa nhà PVI</p>
+                            </div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-12 col-sm-6">
+                        <div class="space-review-item">
+                            <div class="space-review-img">
+                                <img src="./img/review6.png" alt="">
+                            </div>
+                            <div class="space-review-hover">
+                                <p>Không gian cây xanh tại dự án Diamond</p>
+                            </div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-12 col-sm-6">
+                        <div class="space-review-item">
+                            <div class="space-review-img">
+                                <img src="./img/review7.png" alt="">
+                            </div>
+                            <div class="space-review-hover">
+                                <p>Cây xanh trong văn phòng tòa nhà VPBank</p>
+                            </div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-review-btn">
+                    <button>XEM THÊM<i class="fa-solid fa-arrow-right-long"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="margin-bottom: 60px;">
+            <div class="trademark-title">
+                <p>KHÁCH HÀNG</p>
+                <h3> <span>HƠN 2000 KHÁCH HÀNG</span> ĐÃ TIN TƯỞNG VÀ HÀI LÒNG..</h3>
+
+            </div>
+            <div class="swiper mySwiper2" style="overflow: hidden;">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide-hover-trademark">
+                        <div class="img-trademark">
+                            <img src="./img/tr1.png" alt="">
+                        </div>
+                        <div class="swiper-trademark-text">
+                            <p> Công ty TNHH Phần mềm FPT </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-hover-trademark">
+                        <div class="img-trademark">
+                            <img src="./img/tr2.png" alt="">
+                        </div>
+                        <div class="swiper-trademark-text">
+                            <p> Công ty TNHH MTV FLC Land </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-hover-trademark">
+                        <div class="img-trademark">
+                            <img src="./img/tr3.png" alt="">
+                        </div>
+                        <div class="swiper-trademark-text">
+                            <p> Ngân hàng TMCP Ngoại thương Việt Nam - Chi nhánh Hà Nội. </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-hover-trademark">
+                        <div class="img-trademark">
+                            <img src="./img/tr4.png" alt="">
+                        </div>
+                        <div class="swiper-trademark-text">
+                            <p> Ban khai thác mạng - Chi nhánh Tổng công ty hạ tầng mạng </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-hover-trademark">
+                        <div class="img-trademark">
+                            <img src="./img/tr5.png" alt="">
+                        </div>
+                        <div class="swiper-trademark-text">
+                            <p> Agribank Chi nhánh Mỹ Đình </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-hover-trademark">
+                        <div class="img-trademark">
+                            <img src="./img/tr6.png" alt="">
+                        </div>
+                        <div class="swiper-trademark-text">
+                            <p> Công Ty Tài Chính Cổ phần Điện Lực </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-hover-trademark">
+                        <div class="img-trademark">
+                            <img src="./img/tr7.png" alt="">
+                        </div>
+                        <div class="swiper-trademark-text">
+                            <p> CÔNG TY TNHH GAS PETROLIMEX HÀ NỘI </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-hover-trademark">
+                        <div class="img-trademark">
+                            <img src="./img/tr8.png" alt="">
+                        </div>
+
+                        <div class="swiper-trademark-text">
+                            <p>Công ty cổ phần bảo hiểm Phú Hưng </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+            </div>
+
+        </div>
+
+
+        <div id="map" style="margin-top: 30px;">
+            <div class="container-fluid">
+
+                <div class="row ">
+                    <div class="col-md-6">
+                        <div style="width:100%">
+
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14061.016895477505!2d105.77019218230939!3d21.02140310171292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454ab30540137%3A0x35ac90387f094f93!2zU8O0bmcgxJDDoCBUb3dlcg!5e0!3m2!1sen!2s!4v1657271970137!5m2!1sen!2s"
+                                width="100%" height="380px" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="Contacts">
+                            <span class="Contacts-title">Liên Lạc Với Chúng Tôi</span>
+                            <p> LÀM THẾ NÀO ĐỂ LIÊN HỆ VỚI CHÚNG TÔI?</p>
+
+                            <div class="row gy-4 ">
+                                <div class="col-xl-6">
+                                    <div class="Contacts-information">
+                                        <i class="bi bi-geo-alt"></i>
+                                        <div class="Contacts-information-text">
+                                            <p><b>Hoàng Quốc Việt</b> <br> Cầu Giấy, Hà Nội</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="Contacts-information">
+                                        <i class="bi bi-envelope"></i>
+                                        <div class="Contacts-information-text">
+                                            <p><a href="#">Bobebong00@gmail.com</a> <br> info@green.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+
+                                    <div class="Contacts-information">
+                                        <i class="bi bi-telephone-inbound"></i>
+                                        <div class="Contacts-information-text">
+                                            <p> <a href="#">024 2260 2028</a> <br> 8.00 am - 8.00 pm</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </content>
+
+    <footer>
+        <div class="container-md">
+            <div class="row  ">
+
+                <div class="col-lg-4 gy-4 gy-lg-0">
+                    <div class="footer-logo-img">
+                        <img src="./img/logo.png" width="207px" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4 gy-4 gy-lg-0">
+                    <div class="social-icon">
+                        <span class="social-icon-icon"><i class="fa-brands fa-facebook-f"></i></span>
+                        <span class="social-icon-icon"><i class="fa-brands fa-twitter"></i></span>
+                        <span class="social-icon-icon"><i class="fa-brands fa-tiktok"></i></span>
+                    </div>
+                </div>
+                <div class="col-lg-4 gy-4 gy-lg-0">
+                    <div class="footer-Information2">
+                        <p>024 2260 2028</p>
+                        <span> 8.00 am - 8.00 pm</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <p class="license">ThemeREX © 2022. All rights reserved.</p>
+    </footer>
+
+    <button class="btn-scroll-top" onclick="handleScrollTop()">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+
+
+
+        var swiper = new Swiper(".mySwiper", {
+            //    effect: "flip",  // trượt ảnh
+            slidesPerView: 1,
+            spaceBetween: 10,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+
+        });
+
+        var swiper2 = new Swiper(".mySwiper2", {
+            slidesPerView: 2,
+            spaceBetween: 5,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            }, navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                567: {
+                    slidesPerView: 3,
+                    spaceBetween: 5,
+                },
+                640: {
+                    slidesPerView: 4,
+                    spaceBetween: 10,
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 20,
+                },
+            },
+        });
+
+
+    </script>
+</body>
+
+</html>
