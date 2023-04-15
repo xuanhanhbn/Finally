@@ -168,11 +168,12 @@
             <form action="" class="form-2">
                 <div class="d-flex justify-content-between">
                     <div  id="name" class="form-group">
-                        <input  name="name" type="text" placeholder="Họ và  tên">
+                        <input  name="name" type="text" required pattern="^[a-zA-Z]{6,32}$" placeholder="Họ và tên">
                         <span class="form-message"></span>
                     </div>
                     <div id="phone" class="form-group">
-                        <input  name="phone" type="text" placeholder="Số điện thoại">
+                        <input  name="phone" type="number" required pattern="^(03|05|07|08|09|01[2|6|8|9])+([0-9]{8})\b
+                        " placeholder="Số điện thoại">
                         <span class="form-message"></span>
                     </div>
                 </div>
@@ -199,8 +200,8 @@
                     <span class="form-message"></span>
                 </div>
 
-                
-               
+
+
                 <div class="d-flex justify-content-end footer-information">
                     <button class="btn next">TIẾP TỤC</button>
                 </div>
@@ -219,12 +220,12 @@
                 <div class="col-lg-4 col-xl-3 d-none d-lg-block">
                     <div class="contai-sidebar">
                         <div class="sidebar">
-            
+
                           <div class="sidebar-title">
                             <i class="fa-solid fa-bars"></i>
                             <h3>DANH MỤC SẢN PHẨM</h3>
                           </div>
-            
+
                           <ul>
                             <li class="sidebar-items">
                               <a href="#">Cây cảnh nội thất</a>
@@ -248,13 +249,13 @@
                             <li class="sidebar-items">
                               <a href="#">Hoa treo ban công</a>
                             </li>
-            
+
                           </ul>
-                         
-                          
-            
+
+
+
                         </div>
-            
+
                         <div class="information-support">
                           <div>
                             <img src="./img/img01.png" alt="">
@@ -263,7 +264,7 @@
                               <span>0969 999 999</span>
                             </div>
                           </div>
-            
+
                           <div>
                             <img src="./img/img02.png" alt="">
                             <div>
@@ -271,7 +272,7 @@
                               <span>Liên hệ với Shop để biết phí ship</span>
                             </div>
                           </div>
-            
+
                           <div>
                             <img src="./img/img03.png" alt="">
                             <div>
@@ -527,7 +528,7 @@
 
         </div>
 
-        
+
     </content>
 
 

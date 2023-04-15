@@ -37,11 +37,12 @@
                     <form action="" class="form-2">
                         <div class="d-flex justify-content-between">
                             <div id="name" class="form-group">
-                                <input name="name" type="text" placeholder="Họ và  tên">
+                                <input name="name" required pattern="^[a-zA-Z]{6,32}$" type="text" placeholder="Họ và tên">
                                 <span class="form-message"></span>
                             </div>
                             <div id="phone" class="form-group">
-                                <input name="phone" type="text" placeholder="Số điện thoại">
+                                <input name="phone" type="number" required pattern="^(03|05|07|08|09|01[2|6|8|9])+([0-9]{8})\b
+                                " placeholder="Số điện thoại">
                                 <span class="form-message"></span>
                             </div>
                         </div>
